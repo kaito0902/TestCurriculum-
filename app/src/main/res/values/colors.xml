@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_200">#00AEFF</color>
+    <color name="blue_500">#00C4FF</color>
+    <color name="blue_700">#0196C3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- アイコンのバックグラウンドカラー -->
+    <color name="icon_background">#00C4FF</color>
+    <!-- ステータスバーの色 -->
+    <color name="status_bar">#EDF6F6</color>
+    <!-- リンクの色 -->
+    <color name="link_text">#4A8FF7</color>
+</resources>

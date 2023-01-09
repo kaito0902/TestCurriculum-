@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">ConvictionWeather</string>
+
+    <!-- StartActivity -->
+    <string name="dialog_title">アプリを終了しますか？</string>
+
+    <!-- RegisterActivity -->
+    <string name="mail_text">メールアドレス</string>
+    <string name="password_text">パスワード 半角英数字6〜20字</string>
+    <string name="postcode_text">郵便番号-任意</string>
+    <string name="search_text">検索</string>
+    <string name="address_text">住所-任意</string>
+    <string name="register_text">同意して登録</string>
+    <string name="input_warning">7桁まで入力してください</string>
+
+    <!-- LoginActivity -->
+    <string name="login_text">ログイン</string>
+
+    <!-- PrivacyActivity -->
+    <string name="privacy_text">プライバシーポリシー</string>
+    <string name="terms_of_use_text">利用規約</string>
+    <string name="dummy_text">※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※</string>
+
+    <!-- WeatherActivity -->
+    <string name="logout_dialog_title">ログアウトしますか？</string>
+    <string name="hyphen">-</string>
+
+    <!-- 都道府県リスト -->
+    <string-array name="prefectures_list">
+        <item>北海道</item>
+        <item>青森県</item>
+        <item>岩手県</item>
+        <item>宮城県</item>
+        <item>秋田県</item>
+        <item>山形県</item>
+        <item>福島県</item>
+        <item>茨城県</item>
+        <item>栃木県</item>
+        <item>群馬県</item>
+        <item>埼玉県</item>
+        <item>千葉県</item>
+        <item>東京都</item>
+        <item>神奈川県</item>
+        <item>新潟県</item>
+        <item>富山県</item>
+        <item>石川県</item>
+        <item>福井県</item>
+        <item>山梨県</item>
+        <item>長野県</item>
+        <item>岐阜県</item>
+        <item>静岡県</item>
+        <item>愛知県</item>
+        <item>三重県</item>
+        <item>滋賀県</item>
+        <item>京都府</item>
+        <item>大阪府</item>
+        <item>兵庫県</item>
+        <item>奈良県</item>
+        <item>和歌山県</item>
+        <item>鳥取県</item>
+        <item>島根県</item>
+        <item>岡山県</item>
+        <item>広島県</item>
+        <item>山口県</item>
+        <item>徳島県</item>
+        <item>香川県</item>
+        <item>愛媛県</item>
+        <item>高知県</item>
+        <item>福岡県</item>
+        <item>佐賀県</item>
+        <item>長崎県</item>
+        <item>熊本県</item>
+        <item>大分県</item>
+        <item>宮崎県</item>
+        <item>鹿児島県</item>
+        <item>沖縄県</item>
+    </string-array>
+
+    <!-- メニューリスト -->
+    <string-array name="menu_list">
+        <item>ユーザー情報</item>
+        <item>ログアウト</item>
+        <item>利用規約</item>
+        <item>プライバシーポリシー</item>
+    </string-array>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">ホーム</string>
+    <string name="title_search">検索</string>
+    <string name="title_setting">設定</string>
+</resources>

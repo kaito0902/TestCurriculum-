@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="#DADADA"
+                app:layout_constraintBottom_toTopOf="@+id/highestTemperatureText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weatherIcon" />
+
+            <TextView
+                android:id="@+id/humidityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="湿度"
+                app:layout_constraintEnd_toEndOf="@+id/lowestTemperatureText"
+                app:layout_constraintStart_toStartOf="@+id/lowestTemperatureText"
+                app:layout_constraintTop_toBottomOf="@+id/lowestTemperatureCharacter" />
+
+            <TextView
+                android:id="@+id/windSpeedCharacter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hyphen"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/windSpeedText"
+                app:layout_constraintStart_toStartOf="@+id/windSpeedText"
+                app:layout_constraintTop_toBottomOf="@+id/windSpeedText" />
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text=""
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/view"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/lowestTemperatureText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="最低気温"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/dateText" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/weatherIcon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weatherText"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:id="@+id/humidityCharacter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hyphen"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/humidityText"
+                app:layout_constraintStart_toStartOf="@+id/humidityText"
+                app:layout_constraintTop_toBottomOf="@+id/humidityText" />
+
+            <TextView
+                android:id="@+id/lowestTemperatureCharacter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hyphen"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/lowestTemperatureText"
+                app:layout_constraintStart_toStartOf="@+id/lowestTemperatureText"
+                app:layout_constraintTop_toBottomOf="@+id/lowestTemperatureText" />
+
+            <TextView
+                android:id="@+id/highestTemperatureText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="最高気温"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateText" />
+
+            <TextView
+                android:id="@+id/highestTemperatureCharacter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hyphen"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/highestTemperatureText"
+                app:layout_constraintStart_toStartOf="@+id/highestTemperatureText"
+                app:layout_constraintTop_toBottomOf="@+id/highestTemperatureText" />
+
+            <TextView
+                android:id="@+id/weatherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天気情報取得中"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prefectureText" />
+
+            <TextView
+                android:id="@+id/windSpeedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="風速"
+                app:layout_constraintEnd_toEndOf="@+id/highestTemperatureText"
+                app:layout_constraintStart_toStartOf="@+id/highestTemperatureText"
+                app:layout_constraintTop_toBottomOf="@+id/highestTemperatureCharacter" />
+
+            <TextView
+                android:id="@+id/prefectureText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="24dp"
+                android:background="#DADADA"
+                app:layout_constraintBottom_toTopOf="@+id/listview"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="672dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="56dp"
+                android:divider="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/windSpeedCharacter"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.50121653" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
